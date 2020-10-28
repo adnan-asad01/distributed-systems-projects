@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+                 version="1.0">
+<!--    <named-query name="findDivById">-->
+<!--        <query>Select d From Division d where d.id = :theid</query>-->
+<!--    </named-query>-->
+<!--    <named-query name="queryAllDivisions">-->
+<!--        <query>Select d From Division d</query>-->
+<!--    </named-query>-->
+<!--    <named-query name="queryAggregatedDivisions">-->
+<!--        <query>Select new de.uniba.wiai.lspi.demo.ejb3.roomMgt.dtos.AggDivDTO(d.id, d.name, sum(r.squareMeters),-->
+<!--            d.numEmps) From Division d LEFT OUTER JOIN d.rooms r Group By d.id, d.name, d.numEmps-->
+<!--        </query>-->
+<!--    </named-query>-->
+    <named-query name="getPromotionalList">
+        <query>Select d from PromotionalGiftEntity d</query>
+    </named-query>
+    <named-query name="getTrialList">
+        <query>Select d from TrialPackageEntity d</query>
+    </named-query>
+
+    <named-query name="getBeverageList">
+        <query>Select d from BeverageEntity d</query>
+    </named-query>
+</entity-mappings>
